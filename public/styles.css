@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --black: #09090a;
+    --border: #29292e;
+    --dark: #121214;
+    --white: #fff;
+    --text-gray: #4d4d57;
+    --green-hover: #5ceb43;
+    --gray: #e1e1e6;
+    --text-paragraph: #737380;
+    --rocketseat: #8257e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: var(--black);
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+}
+
+header {
+    padding: 22px;
+    border-bottom: 1px solid var(--border);
+    background: var(--dark);
+}
+
+.menu {
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 26px;
+    left: 100px;
+}
+
+.menu a {
+    color: var(--text-gray);
+    text-decoration: none;
+    padding: 30px;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+header a:hover {
+    color: var(--gray);
+    transition: 200ms;
+    border-bottom: 2.5px solid var(--rocketseat);
+}
+
+/* ==== SOBRE ==== */
+
+.sobre {
+    width: 700px;
+    height: 400px;
+    padding: 32px;
+}
+
+.animation {
+    position: relative;
+    left: 150px;
+}
+
+.img_school{
+    position: absolute;
+    top: 130px;
+    left: 800px;
+}
+
+.span_text {
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--gray);
+    position: absolute;
+    left: 915px;
+    top: 130px;
+}
+
+.style_title {
+    font-size: 56px;
+    line-height: 66px;
+    color: var(--white);
+    position: absolute;
+    left: 800px;
+    top: 272px;
+}
+
+.style_title span {
+    background-image: linear-gradient(91.18deg,#8257e5 26.63%,#04d361 62.22%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text {
+    font-size: 18px;
+    color: var(--text-paragraph);
+    position: absolute;
+    left: 800px;
+    top: 420px;
+}
+
+.text strong {
+    color: var(--white);
+}
+
+.text2 {
+    background: var(--dark);
+    color: var(--gray);
+    padding: 80px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.text2 p {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+footer {
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+footer a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--text-gray);
+}
+
+footer a:hover {
+    color: var(--white);
+    transition: 300ms;
+}
+
+/* ==== CONTENT CARDS ==== */
+
+.cards {
+    max-width: 800px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--black);
+    display: grid;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.card:hover {
+    -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+    border: 2px solid #5635c0;
+}
+
+.card_image img {
+    width: 100px;
+    height: 115px;
+}
+
+.card_content,
+.card_info {
+    padding: 24px;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+
+/* ===== ERRO 404 ===== */
+
+.erro_404 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.erro_404 h1 {
+    padding: 30px;
+}
+
+.button {
+    background-color: #5635c0;
+    width: 110px;
+    height: 25px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.button a {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.button a:hover {
+    color: var(--white);
+    transition: 300ms;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: 0; */
+}

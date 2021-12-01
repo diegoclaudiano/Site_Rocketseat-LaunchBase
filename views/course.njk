@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>{{item.title2}}</title>
+{% endblock %}
+
+{% block header %}
+
+    <header>
+        <img class="logo" src="https://www.rocketseat.com.br/_next/image?url=%2Fassets%2Flogos%2Frocketseat.svg&w=256&q=100" alt="">
+            
+        <div class="menu">
+            <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">Comunidade</a>
+            <a href="/">A Rocketseat</a>
+            <a href="/courses" style="color: #fff; border-bottom: 2.5px solid #8257e5">Cursos</a>
+        </div>
+    </header>
+
+{% endblock %}
+
+{% block iframe %}
+    <iframe src="https://www.rocketseat.com.br/{{item.id}}" frameborder="0"></iframe>
+{% endblock %}

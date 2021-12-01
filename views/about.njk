@@ -1,0 +1,61 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>A Rocketseat</title>
+{% endblock %}
+
+{% block header %}
+
+    <header>
+        <img class="logo" src="https://www.rocketseat.com.br/_next/image?url=%2Fassets%2Flogos%2Frocketseat.svg&w=256&q=100" alt="">
+            
+        <div class="menu">
+            <a href="https://discordapp.com/invite/gCRAFhc" target="_blank">Comunidade</a>
+            <a href="/" style="color: #fff; border-bottom: 2.5px solid #8257e5">A Rocketseat</a>
+            <a href="/courses">Cursos</a>
+        </div>
+    </header>
+
+{% endblock %}
+
+{% block about %}
+
+    <div class="sobre">
+        <img src="{{about.img_animation}}" alt="" class="animation">
+    </div>
+        
+    <div class="coding_school">
+        <img src="{{about.img_school}}" alt="" class="img_school">
+            
+            <span class="span_text">
+                Somos uma
+                <br>
+                <strong>Coding School</strong>
+            </span>
+            
+    </div>
+
+    <h1 class="style_title">
+    Conectamos devs  
+        <br>
+        <span>através da educação</span>
+    </h1>
+
+    <p class="text">
+        Nossa missão é capacitar <strong>pessoas que buscam se<br> profissionalizar na programação</strong>
+        independente do seu <br>momento ou nível de conhecimento.
+    </p>
+
+    <div class="text2">
+        <p>{{about.description}}</p>
+    </div>
+
+    <div>
+        <footer>
+            {% for link in about.links %}
+                <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+            {% endfor %}
+        </footer>
+    </div>
+
+{% endblock %}
