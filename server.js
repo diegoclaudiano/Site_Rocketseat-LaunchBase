@@ -15,8 +15,8 @@ nunjucks.configure("views", {
 
 server.get("/", function(req, res){
     const about = {
-        img_animation: "https://www.rocketseat.com.br/_next/image?url=%2Fassets%2Fvectors%2Fastronauts.svg&w=640&q=100",
-        img_school: "https://www.rocketseat.com.br/_next/image?url=%2Fassets%2Ficons%2Fschool.svg&w=96&q=100",
+        img_animation: "/image/astronauts.svg",
+        img_school: "/image/school.svg",
         description: "Criamos um ambiente dedicado para que programadores e <br>programadoras <strong>possam se conectar com as oportunidades, estudar <br>e crescer na carreira</strong> através de uma jornada de aprendizado <br>completa e contínua.",
         links: [
             {name:"Email", url:"mailto:oi@rocketseat.com.br"},
